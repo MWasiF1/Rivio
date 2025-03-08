@@ -1,14 +1,17 @@
 'use client';
 import React, { useState } from 'react';
+
 export default function Accordion() {
    const [activeIndex, setActiveIndex] = useState<number | null>(null);
-    const toggleAccordion = (index: any) => {
+
+    const toggleAccordion = (index: number) => {  // Fixed type here
         if (activeIndex === index) {
             setActiveIndex(null); 
         } else {
             setActiveIndex(index); 
         }
     };
+
     const accordionData = [
         { title: "How does Rivio help businesses improve asset tracking?", content: 'Rivio leverages real-time IoT technology to automate tracking, optimize resource management, and reduce manual inspections. With instant alerts and remote monitoring, businesses stay informed and in control 24/7.' },
         { title: "Is Rivio’s system easy to set up and use?", content: "Absolutely! It features a user-friendly interface with quick and hassle-free installation." },
@@ -16,6 +19,7 @@ export default function Accordion() {
         { title: "How does Rivio’s level tracking system work?", content: "It uses smart sensors and real-time data to monitor and optimize inventory levels." },
         { title: "What industries can benefit from Rivio’s tracking solutions?", content: " Rivio’s tracking solutions are ideal for industries like logistics, manufacturing, oil & gas, and agriculture." },
     ];
+
     return (
         <div className="bg-black p-6 sm:p-8">
             <div className="px-4 sm:px-8">
