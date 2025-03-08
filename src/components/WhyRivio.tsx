@@ -4,8 +4,6 @@ import Image from "next/image";
 export default function WhyRivio() {
   return (
     <div className="bg-black min-h-screen text-white py-16 px-4 flex flex-col items-center">
-          
-      {/* Main Content */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-36 items-center mb-10">
         <div className="flex flex-col items-center md:items-start md:max-w-md">
           <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:max-w-3xl">
@@ -13,26 +11,44 @@ export default function WhyRivio() {
               Why Rivio is Perfect For
             </span>
             <span className="text-[#00D11F] font-bold block sm:inline">
-                Golf Course Owners
+              Golf Course Owners
             </span>
           </h1>
 
           <p className="text-white mt-4">
-            Rivio keeps you ahead with real-time monitoring and smart alerts, so you know what’s happening before there’s a problem. No surprises, no wasted time—just seamless service and fewer costly headaches. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dolor metus. Ut auctor sollicitudin nisi, a tristique nisl blandit ac.
+            Rivio keeps you ahead with real-time monitoring and smart alerts, so you know what&rsquo;s happening before there&rsquo;s a problem. No surprises, no wasted time&mdash;just seamless service and fewer costly headaches. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dolor metus. Ut auctor sollicitudin nisi, a tristique nisl blandit ac.
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 mt-10">
             <div className="flex flex-col items-center w-24">
-              <img src="/image/monitor_heart (1).png" alt="Real-Time Monitoring" className="w-8 h-8" />
+              <Image
+                src="/image/monitor_heart (1).png"
+                alt="Real-Time Monitoring"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+              />
               <span className="mt-2 text-sm text-white text-center">Real-Time Monitoring</span>
             </div>
             <div className="flex flex-col items-center w-24">
-              <img src="/image/signal_wifi_off.png" alt="No WiFi Needed" className="w-8 h-8" />
+              <Image
+                src="/image/signal_wifi_off.png"
+                alt="No WiFi Needed"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+              />
               <span className="mt-2 text-sm text-white text-center">No Wifi Needed</span>
             </div>
             <div className="flex flex-col items-center w-32">
-              <img src="/image/objects.png" alt="Smart Alerts" className="w-8 h-8" />
-              <span className="mt-2 text-sm text-white text-center">Smart Alerts & Notifications</span>
+              <Image
+                src="/image/objects.png"
+                alt="Smart Alerts"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+              />
+              <span className="mt-2 text-sm text-white text-center">Smart Alerts &amp; Notifications</span>
             </div>
           </div>
         </div>
@@ -52,25 +68,19 @@ export default function WhyRivio() {
       </div>
 
       <div className="max-w-4xl mx-auto rounded-3xl border-2 border-[#00D11F] bg-[#0A1B0C] p-6 flex flex-col transition-all duration-500 mt-16 text-white">
-  {/* Star Rating */}
-  <div className="flex space-x-1">
-    <span className="text-white text-4xl">★</span>
-    <span className="text-white text-4xl">★</span>
-    <span className="text-white text-4xl">★</span>
-    <span className="text-white text-4xl">★</span>
-    <span className="text-white text-4xl">★</span>
-  </div>
-
-  {/* Reviewer Name */}
-  <p className="text-[#00D11F] text-xl font-bold mt-2">— James Caldwell</p>
-  <p className="text-sm text-[#FFFFFF]">Owner, GreenHorizon Golf Club</p>
-
-  {/* Review Content */}
-  <p className="text-sm text-[#FFFFFF] mt-3">
-    "Rivio has revolutionized how we manage our golf course’s water systems. With real-time tracking and instant alerts, we no longer worry about irrigation failures or unexpected water shortages. It’s a game-changer that keeps our course in top condition while saving time and money!"
-  </p>
-</div>
-
+        <div className="flex space-x-1">
+          <span className="text-white text-4xl">★</span>
+          <span className="text-white text-4xl">★</span>
+          <span className="text-white text-4xl">★</span>
+          <span className="text-white text-4xl">★</span>
+          <span className="text-white text-4xl">★</span>
+        </div>
+        <p className="text-[#00D11F] text-xl font-bold mt-2">— James Caldwell</p>
+        <p className="text-sm text-[#FFFFFF]">Owner, GreenHorizon Golf Club</p>
+        <p className="text-sm text-[#FFFFFF] mt-3">
+          &quot;Rivio has revolutionized how we manage our golf course&rsquo;s water systems. With real-time tracking and instant alerts, we no longer worry about irrigation failures or unexpected water shortages. It&rsquo;s a game-changer that keeps our course in top condition while saving time and money!&quot;
+        </p>
+      </div>
     </div>
   );
 }

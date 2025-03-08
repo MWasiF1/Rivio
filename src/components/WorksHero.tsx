@@ -30,24 +30,26 @@ export default function WorksHero() {
       <p className="text-white">Easy setup & scalability</p>
     </li>
   </ul>
-  <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-8">
-    <div className="flex flex-col items-center w-24">
-      <img src="/image/monitor_heart (1).png" alt="Real-Time Monitoring" className="w-8 h-8" />
-      <span className="mt-2 text-sm text-white text-center">Real-Time Monitoring</span>
-    </div>
-    <div className="flex flex-col items-center w-24">
-      <img src="/image/objects.png" alt="Instant Alerts" className="w-8 h-8" />
-      <span className="mt-2 text-sm text-white text-center">Instant Alerts</span>
-    </div>
-    <div className="flex flex-col items-center w-24">
-      <img src="/image/signal_wifi_off.png" alt="No WiFi Needed" className="w-8 h-8" />
-      <span className="mt-2 text-sm text-white text-center">No Wifi Needed</span>
-    </div>
-    <div className="flex flex-col items-center w-24">
-      <img src="/image/battt.png" alt="Long Battery Life" className="w-12 h-12" />
-      <span className="mt-2 text-sm text-white text-center">Long Battery Life</span>
-    </div>
+
+<div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-8">
+  <div className="flex flex-col items-center w-24">
+    <Image src="/image/monitor_heart (1).png" alt="Real-Time Monitoring" width={32} height={32} />
+    <span className="mt-2 text-sm text-white text-center">Real-Time Monitoring</span>
   </div>
+  <div className="flex flex-col items-center w-24">
+    <Image src="/image/objects.png" alt="Instant Alerts" width={32} height={32} />
+    <span className="mt-2 text-sm text-white text-center">Instant Alerts</span>
+  </div>
+  <div className="flex flex-col items-center w-24">
+    <Image src="/image/signal_wifi_off.png" alt="No WiFi Needed" width={32} height={32} />
+    <span className="mt-2 text-sm text-white text-center">No Wifi Needed</span>
+  </div>
+  <div className="flex flex-col items-center w-24">
+    <Image src="/image/battt.png" alt="Long Battery Life" width={48} height={48} />
+    <span className="mt-2 text-sm text-white text-center">Long Battery Life</span>
+  </div>
+</div>
+
 </div>
 <div className="flex justify-center md:justify-end mt-8">
   <div className="flex flex-col items-center">

@@ -72,7 +72,7 @@ export default function Flow() {
           How Rivio Works: <span className="text-[#00D11F]">A Simple, Smart Process</span>
         </h2>
         <p className="mt-8 text-lg text-gray-300">
-          From setup to insights, Rivio makes IoT monitoring effortless. Follow these easy steps to install, track, and optimize your devices—whether you're managing one or thousands.
+          From setup to insights, Rivio makes IoT monitoring effortless. Follow these easy steps to install, track, and optimize your devices—whether you&apos;re managing one or thousands.
         </p>
       </div>
       
@@ -114,8 +114,10 @@ export default function Flow() {
         <h2 className="text-white text-center text-4xl font-bold whitespace-nowrap">
           Ready to see what <span className="text-[#00D11F]">Rivio can do?</span>
         </h2>
-        <p className="mt-6 text-lg text-gray-300">
-                  Whether you need an off-the-shelf solution or custom integration, we’re here to help.</p>
+      <p className="mt-6 text-lg text-gray-300">
+  Whether you need an off-the-shelf solution or custom integration, we&apos;re here to help.
+</p>
+
                <button className="mt-6 px-12 py-2 hover:bg-green-400 transition bg-gradient-to-r from-[#006A10] to-[#00D11F] text-white rounded-[12px]">
       Get Started
     </button>
