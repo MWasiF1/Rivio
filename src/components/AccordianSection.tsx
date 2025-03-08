@@ -1,8 +1,8 @@
 'use client';
 import React, { useState } from 'react';
 export default function Accordion() {
-    const [activeIndex, setActiveIndex] = useState(null);
-    const toggleAccordion = (index: unknown) => {
+   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+    const toggleAccordion = (index: any) => {
         if (activeIndex === index) {
             setActiveIndex(null); 
         } else {
@@ -22,7 +22,7 @@ export default function Accordion() {
                 <h2 className="text-5xl sm:text-1xl text-white font-bold leading-[70.44px] tracking-normal text-center">
                     Frequently Asked <span className="text-[#00D11F]">Questions</span>
                 </h2>
-                <p className="text-[#F2F2F2] text-center mt-2 max-w-2xl mx-auto md:text-sm sm:text-[18px]">
+                <p className="text-[#F2F2F2] text-center mt-2 max-w-2xl mx-auto md:text-md sm:text-[18px]">
                   Find answers to common questions about Rivio’s smart tracking and monitoring solutions.
                 </p>
             </div>
