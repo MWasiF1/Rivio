@@ -6,13 +6,13 @@ import Image from 'next/image';
 export default function ContactUs() {
   return (
     <div className="bg-black p-6 sm:p-8">
-               <Image
-                src="/image/Ellipse 1441.png"
-                alt="feature"
-                width={1000}
-                height={1200}
-                className="absolute left-0  z-10"
-            />
+              <Image
+    src="/image/Ellipse 1441.png"
+    alt="feature"
+    width={1000}
+    height={1200}
+    className="absolute left-0  z-10"
+/>
       <div className="my-7">
         <h2 className="text-5xl sm:text-1xl text-white font-bold leading-[70.44px] tracking-normal text-center">
           Get Your Pipeline Rich With <span className="block text-[#00D11F]">Qualified Deals</span>
