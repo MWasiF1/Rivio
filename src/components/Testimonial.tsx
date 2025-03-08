@@ -31,7 +31,7 @@ const testimonials = [
 
 export default function TestimonialCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const carouselRef = useRef(null);
+  const carouselRef = useRef<HTMLDivElement | null>(null);
   const extendedTestimonials = [...testimonials, ...testimonials]; 
  useEffect(() => {
   const interval = setInterval(() => {
